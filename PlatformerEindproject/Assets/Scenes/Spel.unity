@@ -270,6 +270,10 @@ MonoBehaviour:
   movementSpeed: 3
   jumpForce: 5
   rb: {fileID: 371922035}
+  groundLayers:
+    serializedVersion: 2
+    m_Bits: 64
+  feet: {fileID: 371922038}
 --- !u!1 &604128021
 GameObject:
   m_ObjectHideFlags: 0
