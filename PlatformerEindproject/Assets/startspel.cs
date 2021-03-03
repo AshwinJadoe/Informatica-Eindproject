@@ -9,5 +9,7 @@ public class Control : MonoBehaviour
   public void NextScene()
   {
     SceneManager.LoadScene("Spel");
+    Debug.Log("klop klop");
+
   }
 }
