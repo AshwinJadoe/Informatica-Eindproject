@@ -268,12 +268,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 3
+  feet: {fileID: 371922038}
   jumpForce: 5
   rb: {fileID: 371922035}
   groundLayers:
     serializedVersion: 2
     m_Bits: 64
-  feet: {fileID: 371922038}
 --- !u!1 &604128021
 GameObject:
   m_ObjectHideFlags: 0
@@ -334,7 +334,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 674499911}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.051, y: -0.598, z: 0.6440918}
+  m_LocalPosition: {x: 0.002, y: -0.562, z: 0.6440918}
   m_LocalScale: {x: 0.66528136, y: 0.08892754, z: 1}
   m_Children: []
   m_Father: {fileID: 604128022}
