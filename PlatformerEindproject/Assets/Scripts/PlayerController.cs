@@ -7,14 +7,20 @@ public class PlayerController : MonoBehaviour
   public float moveSpeed;
   public float jumpForce;
 
-    void Start()
-    {
-        
-    }
+  private Rigidbody2D myRigidbody;
 
-    // Update is called once per frame
-    void Update()
+  void Start()
+  {
+    myRigidbody = this.gameObject.GetComponent<Rigidbody2D>();
+  }
+
+  void Update()
+  {
+    myRigidbody.velocity = new Vector2(moveSpeed, myRigidbody.velocity.y);
+
+    if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButton(0))
     {
-        
+      myRigidbody.velocity = new Vector2(myRigidbody.velocity.x, jumpForce);
     }
+  }
 }
