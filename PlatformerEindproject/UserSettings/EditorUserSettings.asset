@@ -8,6 +8,7 @@ EditorUserSettings:
 <<<<<<< Updated upstream
 =======
     RecentlyUsedScenePath-0:
+<<<<<<< HEAD
       value: 22424703114646680e0b0227036c6c111b07142f1f2b233e2867083debf42d
       flags: 0
     RecentlyUsedScenePath-1:
@@ -20,6 +21,14 @@ EditorUserSettings:
       value: 22424703114646680e0b0227036c6c00131b563f22213229
       flags: 0
     RecentlyUsedScenePath-4:
+=======
+      value: 22424703114646680e0b0227036c7d15111e16392f2023222067083debf42d
+      flags: 0
+    RecentlyUsedScenePath-1:
+      value: 22424703114646680e0b0227036c6c00131b563f22213229
+      flags: 0
+    RecentlyUsedScenePath-2:
+>>>>>>> parent of 03364aa (Merge branch 'main' of https://github.com/AshwinJadoe/Informatica-Eindproject into main)
       value: 22424703114646680e0b0227036c4c00131b5878623d28393930
       flags: 0
 >>>>>>> Stashed changes
