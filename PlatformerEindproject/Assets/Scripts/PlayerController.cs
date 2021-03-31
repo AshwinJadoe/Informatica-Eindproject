@@ -9,6 +9,8 @@ public class PlayerController : MonoBehaviour
 
   private Rigidbody2D myRigidbody;
 
+  public bool grounded;
+
   void Start()
   {
     myRigidbody = this.gameObject.GetComponent<Rigidbody2D>();
