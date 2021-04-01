@@ -897,9 +897,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
 <<<<<<< HEAD
+<<<<<<< HEAD
   pooledObject: {fileID: 8654764932968448482, guid: b8bfe3453dd3bed41a26de2c3aa2a67c, type: 3}
   pooledAmount: 7
 =======
+=======
+>>>>>>> parent of 8c8e691 (Merge branch 'main' of https://github.com/AshwinJadoe/Informatica-Eindproject into main)
   pooledObject: {fileID: 911344743527629408, guid: 24e967deb714b304e833fd2eadcd1b64, type: 3}
   pooledAmount: 8
 >>>>>>> parent of 8c8e691 (Merge branch 'main' of https://github.com/AshwinJadoe/Informatica-Eindproject into main)
@@ -1313,8 +1316,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
 <<<<<<< HEAD
+<<<<<<< HEAD
   MovementSpeed: 100
   JumpForce: 1
+=======
+  MovementSpeed: 1
+>>>>>>> parent of 8c8e691 (Merge branch 'main' of https://github.com/AshwinJadoe/Informatica-Eindproject into main)
 =======
   MovementSpeed: 1
 >>>>>>> parent of 8c8e691 (Merge branch 'main' of https://github.com/AshwinJadoe/Informatica-Eindproject into main)
@@ -1429,7 +1436,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 5
+=======
+  m_RootOrder: 6
+>>>>>>> parent of 8c8e691 (Merge branch 'main' of https://github.com/AshwinJadoe/Informatica-Eindproject into main)
 =======
   m_RootOrder: 6
 >>>>>>> parent of 8c8e691 (Merge branch 'main' of https://github.com/AshwinJadoe/Informatica-Eindproject into main)
