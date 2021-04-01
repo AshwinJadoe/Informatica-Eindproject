@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
-  public float cameraSpeed;
+
   public PlayerController thePlayer;
 
   private Vector3 lastPlayerPosition;
@@ -20,10 +20,10 @@ public class CameraController : MonoBehaviour
   // Update is called once per frame
   void Update()
   {
-   // distanceToMove = thePlayer.transform.position.x - lastPlayerPosition.x;
+    distanceToMove = thePlayer.transform.position.x - lastPlayerPosition.x;
 
-    transform.position = new Vector3(transform.position.x + cameraSpeed, transform.position.y, transform.position.z);
+    transform.position = new Vector3(transform.position.x + distanceToMove, transform.position.y, transform.position.z);
 
-    
+    lastPlayerPosition = thePlayer.transform.position;
   }
 }
