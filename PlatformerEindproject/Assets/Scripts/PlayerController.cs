@@ -6,6 +6,7 @@ public class PlayerController : MonoBehaviour
 {
   public float moveSpeed;
   public float jumpForce;
+  public float moveAcceleration;
 
   private Rigidbody2D myRigidbody;
 
@@ -24,6 +25,7 @@ public class PlayerController : MonoBehaviour
   void Update()
   {
     grounded = Physics2D.IsTouchingLayers(myCollider, whatIsGround);
+    moveSpeed += Time.deltaTime * moveAcceleration;
 
     myRigidbody.velocity = new Vector2(moveSpeed, myRigidbody.velocity.y);
 
