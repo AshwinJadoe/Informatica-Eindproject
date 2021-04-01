@@ -28,7 +28,7 @@ public class PlatformGenerator : MonoBehaviour
 
       transform.position = new Vector3(transform.position.x + platformWidth + distanceBetween, transform.position.y, 0);
 
-      Instantiate(thePlatform, transform.position, transform.rotation);
+      //Instantiate(thePlatform, transform.position, transform.rotation);
     }
   }
 }
