@@ -896,8 +896,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33c7991716198504bb66cb39427274fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   pooledObject: {fileID: 8654764932968448482, guid: b8bfe3453dd3bed41a26de2c3aa2a67c, type: 3}
   pooledAmount: 7
+=======
+  pooledObject: {fileID: 911344743527629408, guid: 24e967deb714b304e833fd2eadcd1b64, type: 3}
+  pooledAmount: 8
+>>>>>>> parent of 8c8e691 (Merge branch 'main' of https://github.com/AshwinJadoe/Informatica-Eindproject into main)
 --- !u!4 &1075830942
 Transform:
   m_ObjectHideFlags: 0
@@ -1307,8 +1312,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7402867ffe10c204d9236e6464be575f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   MovementSpeed: 100
   JumpForce: 1
+=======
+  MovementSpeed: 1
+>>>>>>> parent of 8c8e691 (Merge branch 'main' of https://github.com/AshwinJadoe/Informatica-Eindproject into main)
 --- !u!50 &1510224793
 Rigidbody2D:
   serializedVersion: 4
@@ -1329,7 +1338,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 0
 --- !u!61 &1510224794
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1415,11 +1424,15 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1510224791}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 341, y: 58, z: 80}
+  m_LocalPosition: {x: 83, y: 57, z: 80}
   m_LocalScale: {x: 200, y: 200, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+<<<<<<< HEAD
   m_RootOrder: 5
+=======
+  m_RootOrder: 6
+>>>>>>> parent of 8c8e691 (Merge branch 'main' of https://github.com/AshwinJadoe/Informatica-Eindproject into main)
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1626467421
 GameObject:
