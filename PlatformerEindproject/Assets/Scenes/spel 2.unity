@@ -382,7 +382,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 657113881}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -39.6, y: 0.65, z: -0.017921448}
+  m_LocalPosition: {x: -72.9, y: 0.65, z: -0.017921448}
   m_LocalScale: {x: 1.35512, y: 1.0424, z: 1.0424}
   m_Children: []
   m_Father: {fileID: 1493075916}
@@ -660,6 +660,51 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1075830940
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1075830942}
+  - component: {fileID: 1075830941}
+  m_Layer: 0
+  m_Name: ObjectPooler
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1075830941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1075830940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33c7991716198504bb66cb39427274fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pooledObject: {fileID: 911344743527629408, guid: 24e967deb714b304e833fd2eadcd1b64, type: 3}
+  pooledAmount: 8
+--- !u!4 &1075830942
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1075830940}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 176, y: 242, z: -207.71292}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1136344692
 GameObject:
   m_ObjectHideFlags: 0
@@ -805,7 +850,8 @@ MonoBehaviour:
   generationPoint: {fileID: 1368500209}
   distanceBetween: 100
   distanceBetweenMin: 75
-  distanceBetweenMax: 200
+  distanceBetweenMax: 250
+  theObjectPool: {fileID: 1075830941}
 --- !u!4 &1462567121
 Transform:
   m_ObjectHideFlags: 0
