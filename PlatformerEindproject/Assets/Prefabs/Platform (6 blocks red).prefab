@@ -341,7 +341,7 @@ GameObject:
   - component: {fileID: 3873066221165995920}
   m_Layer: 8
   m_Name: Platform (6 blocks red)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

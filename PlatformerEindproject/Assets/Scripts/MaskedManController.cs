@@ -6,11 +6,15 @@ public class MaskedManController : MonoBehaviour
 {
 
   public float movementSpeed;
+  private float movementSpeedStore;
   public float speedMultiplier;
 
   public float speedIncreaseMilestone;
+  private float speedIncreaseMilestoneStore;
+
   public float location;
   private float speedMilestoneCount;
+  private float speedMilestoneCountStore;
 
   public float jumpForce;
 
@@ -25,27 +29,35 @@ public class MaskedManController : MonoBehaviour
   public Transform groundCheck;
   public float groundCheckRadius;
 
-  private Collider2D myCollider;
+  //private Collider2D myCollider;
 
   private Animator myAnimator;
+
+  public GameManager theGameManager;
 
   void Start()
   {
     myRigidbody = GetComponent<Rigidbody2D>();
 
-    myCollider = GetComponent<Collider2D>();
+    // myCollider = GetComponent<Collider2D>();
 
     myAnimator = GetComponent<Animator>();
 
     jumpTimeCounter = jumpTime;
     speedMilestoneCount += speedIncreaseMilestone;
+
+    movementSpeedStore = movementSpeed;
+    speedMilestoneCountStore = speedMilestoneCount;
+    speedIncreaseMilestoneStore = speedIncreaseMilestone;
   }
+
+
 
   void Update()
   {
     location = transform.position.x;
 
-    if(location > speedMilestoneCount)
+    if (location > speedMilestoneCount)
     {
       speedMilestoneCount += speedIncreaseMilestone;
       movementSpeed = movementSpeed * speedMultiplier;
@@ -98,5 +110,17 @@ public class MaskedManController : MonoBehaviour
     myAnimator.SetBool("Grounded", grounded);
     myAnimator.SetBool("Fall", isFalling);
 
+  }
+
+  private void OnCollisionEnter2D(Collision2D other)
+  {
+    if (other.gameObject.tag == "killbox")
+    {
+      
+      theGameManager.RestartGame();
+      movementSpeed = movementSpeedStore;
+      speedMilestoneCount = speedMilestoneCountStore;
+      speedIncreaseMilestone = speedIncreaseMilestoneStore;
+    }
   }
 }

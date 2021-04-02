@@ -4,7 +4,7 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Ground
+  - killbox
   layers:
   - Default
   - TransparentFX
@@ -14,8 +14,8 @@ TagManager:
   - UI
   - 
   - 
-  - ground
-  - player
+  - 
+  - 
   - 
   - 
   - 
@@ -39,12 +39,6 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Background
-    uniqueID: 625234201
-    locked: 0
-  - name: Platforms
-    uniqueID: 2902587363
-    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0

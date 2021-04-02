@@ -94,8 +94,8 @@ GameObject:
   - component: {fileID: 911344743527629414}
   - component: {fileID: 911344743527629413}
   m_Layer: 8
-  m_Name: Platform (5 blocks)
-  m_TagString: Ground
+  m_Name: Platform (5 blocks red)
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
