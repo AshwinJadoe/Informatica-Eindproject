@@ -664,7 +664,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 862136835}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: f367205735b98dc49b64ecb6093a5469, type: 3}
@@ -1545,7 +1545,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 30
+  m_GravityScale: 60
   m_Material: {fileID: 6200000, guid: 9900aee1e927b7e47af2ae2ca8d3c9d3, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -1655,7 +1655,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 250
-  jumpForce: 200
+  jumpForce: 300
+  jumpTime: 0.3
   grounded: 0
   isFalling: 0
   whatIsGround:
@@ -1697,7 +1698,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 911344743527629415, guid: 24e967deb714b304e833fd2eadcd1b64, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -672
+      value: -598
       objectReference: {fileID: 0}
     - target: {fileID: 911344743527629415, guid: 24e967deb714b304e833fd2eadcd1b64, type: 3}
       propertyPath: m_LocalPosition.y
