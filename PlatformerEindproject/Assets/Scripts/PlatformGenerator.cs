@@ -42,7 +42,7 @@ public class PlatformGenerator : MonoBehaviour
 
       platformSelector = Random.Range(0, theObjectPools.Length);
 
-      transform.position = new Vector3(transform.position.x + (platformWidths[platformSelector] / 2) + distanceBetween, transform.position.y, 0);
+      transform.position = new Vector3(transform.position.x + (platformWidths[platformSelector] / 2) + distanceBetween, transform.position.y, 264);
 
       //Instantiate(thePlatform, transform.position, transform.rotation);
 

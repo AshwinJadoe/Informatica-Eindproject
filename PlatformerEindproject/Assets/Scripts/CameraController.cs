@@ -5,7 +5,7 @@ using UnityEngine;
 public class CameraController : MonoBehaviour
 {
 
-  public PlayerController thePlayer;
+  public MaskedManController thePlayer;
 
   private Vector3 lastPlayerPosition;
   private float distanceToMove;
@@ -13,7 +13,7 @@ public class CameraController : MonoBehaviour
 
   void Start()
   {
-    thePlayer = FindObjectOfType<PlayerController>();
+    thePlayer = FindObjectOfType<MaskedManController>();
     lastPlayerPosition = thePlayer.transform.position;
   }
 
