@@ -17,7 +17,10 @@ public class ScoreManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        if(PlayerPrefs.HasKey("HighScore"))
+        {
+            highScoreCount = PlayerPrefs.GetFloat("HighScore");
+        }
     }
 
     // Update is called once per frame
@@ -31,6 +34,7 @@ public class ScoreManager : MonoBehaviour
         if (scoreCount > highScoreCount)
         {
             highScoreCount = scoreCount;
+            PlayerPrefs.SetFloat("HighScore", highScoreCount);
         }
 
         scoreText.text = "Score: " + Mathf.Round (scoreCount);
