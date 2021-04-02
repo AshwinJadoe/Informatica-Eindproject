@@ -14,25 +14,39 @@ public class PlatformGenerator : MonoBehaviour
   public float distanceBetweenMin;
   public float distanceBetweenMax;
 
-  public ObjectPooler theObjectPool;
+  private int platformSelector;
+  private float[] platformWidths;
+
+
+
+  public ObjectPooler[] theObjectPools;
 
   void Start()
   {
-    platformWidth = thePlatform.GetComponent<BoxCollider2D>().size.x;
+    //platformWidth = thePlatform.GetComponent<BoxCollider2D>().size.x;
+
+    platformWidths = new float[theObjectPools.Length];
+
+    for (int i = 0; i < theObjectPools.Length; i++)
+    {
+      platformWidths[i] = theObjectPools[i].pooledObject.GetComponent<BoxCollider2D>().size.x;
+    }
   }
 
   // Update is called once per frame
   void Update()
   {
-    if(transform.position.x < generationPoint.position.x)
+    if (transform.position.x < generationPoint.position.x)
     {
       distanceBetween = Random.Range(distanceBetweenMin, distanceBetweenMax);
 
-      transform.position = new Vector3(transform.position.x + platformWidth + distanceBetween, transform.position.y, 0);
+      platformSelector = Random.Range(0, theObjectPools.Length);
+
+      transform.position = new Vector3(transform.position.x + platformWidths[platformSelector] + distanceBetween, transform.position.y, 0);
 
       //Instantiate(thePlatform, transform.position, transform.rotation);
 
-      GameObject newPlatform =  theObjectPool.GetPooledObject();
+      GameObject newPlatform = theObjectPools[platformSelector].GetPooledObject();
 
       newPlatform.transform.position = transform.position;
       newPlatform.transform.rotation = transform.rotation;
