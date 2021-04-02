@@ -42,7 +42,7 @@ public class PlatformGenerator : MonoBehaviour
 
       platformSelector = Random.Range(0, theObjectPools.Length);
 
-      transform.position = new Vector3(transform.position.x + platformWidths[platformSelector] + distanceBetween, transform.position.y, 0);
+      transform.position = new Vector3(transform.position.x + (platformWidths[platformSelector] / 2) + distanceBetween, transform.position.y, 0);
 
       //Instantiate(thePlatform, transform.position, transform.rotation);
 
@@ -51,6 +51,9 @@ public class PlatformGenerator : MonoBehaviour
       newPlatform.transform.position = transform.position;
       newPlatform.transform.rotation = transform.rotation;
       newPlatform.SetActive(true);
+
+      transform.position = new Vector3(transform.position.x + (platformWidths[platformSelector] / 2), transform.position.y, 0);
+
     }
   }
 }
