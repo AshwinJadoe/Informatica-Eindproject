@@ -3814,7 +3814,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 250
-  speedMultiplier: 1.05
+  speedMultiplier: 1.1
   speedIncreaseMilestone: 5000
   location: 0
   jumpForce: 300
