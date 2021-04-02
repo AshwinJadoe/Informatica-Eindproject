@@ -1655,8 +1655,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 250
+  speedMultiplier: 1.05
+  speedIncreaseMilestone: 5000
+  location: 0
   jumpForce: 300
-  jumpTime: 0.3
+  jumpTime: 0.25
   grounded: 0
   isFalling: 0
   whatIsGround:

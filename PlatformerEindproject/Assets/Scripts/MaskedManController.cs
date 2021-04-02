@@ -6,6 +6,12 @@ public class MaskedManController : MonoBehaviour
 {
 
   public float movementSpeed;
+  public float speedMultiplier;
+
+  public float speedIncreaseMilestone;
+  public float location;
+  private float speedMilestoneCount;
+
   public float jumpForce;
 
   public float jumpTime;
@@ -16,8 +22,6 @@ public class MaskedManController : MonoBehaviour
   public bool grounded;
   public bool isFalling;
   public LayerMask whatIsGround;
-
-
 
   private Collider2D myCollider;
 
@@ -32,12 +36,22 @@ public class MaskedManController : MonoBehaviour
     myAnimator = GetComponent<Animator>();
 
     jumpTimeCounter = jumpTime;
+    speedMilestoneCount += speedIncreaseMilestone;
   }
 
   void Update()
   {
+    location = transform.position.x;
+
+    if(location > speedMilestoneCount)
+    {
+      speedMilestoneCount += speedIncreaseMilestone;
+      movementSpeed = movementSpeed * speedMultiplier;
+    }
 
     grounded = Physics2D.IsTouchingLayers(myCollider, whatIsGround);
+
+
 
     myRigidbody.velocity = new Vector2(movementSpeed, myRigidbody.velocity.y);
 
@@ -77,12 +91,9 @@ public class MaskedManController : MonoBehaviour
       jumpTimeCounter = jumpTime;
     }
 
-
-
     myAnimator.SetFloat("Speed", myRigidbody.velocity.x);
     myAnimator.SetBool("Grounded", grounded);
     myAnimator.SetBool("Fall", isFalling);
-
 
   }
 }
