@@ -22,6 +22,8 @@ public class MaskedManController : MonoBehaviour
   public bool grounded;
   public bool isFalling;
   public LayerMask whatIsGround;
+  public Transform groundCheck;
+  public float groundCheckRadius;
 
   private Collider2D myCollider;
 
@@ -49,8 +51,9 @@ public class MaskedManController : MonoBehaviour
       movementSpeed = movementSpeed * speedMultiplier;
     }
 
-    grounded = Physics2D.IsTouchingLayers(myCollider, whatIsGround);
+    //grounded = Physics2D.IsTouchingLayers(myCollider, whatIsGround);
 
+    grounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, whatIsGround);
 
 
     myRigidbody.velocity = new Vector2(movementSpeed, myRigidbody.velocity.y);
