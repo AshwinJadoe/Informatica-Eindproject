@@ -17,7 +17,7 @@ public class ScoreManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if(PlayerPrefs.HasKey("HighScore"))
+        if (PlayerPrefs.HasKey("HighScore"))
         {
             highScoreCount = PlayerPrefs.GetFloat("HighScore");
         }
@@ -26,7 +26,7 @@ public class ScoreManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(scoreIncreasing)
+        if (scoreIncreasing)
         {
             scoreCount += pointsPerSecond * Time.deltaTime;
         }
@@ -37,7 +37,7 @@ public class ScoreManager : MonoBehaviour
             PlayerPrefs.SetFloat("HighScore", highScoreCount);
         }
 
-        scoreText.text = "Score: " + Mathf.Round (scoreCount);
-        highScoreText.text = "High Score: " + Mathf.Round (highScoreCount);
+        scoreText.text = "Score: " + Mathf.Round(scoreCount);
+        highScoreText.text = "High Score: " + Mathf.Round(highScoreCount);
     }
 }
