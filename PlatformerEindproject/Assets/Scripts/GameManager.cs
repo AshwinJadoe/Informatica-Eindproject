@@ -15,18 +15,18 @@ public class GameManager : MonoBehaviour
 
   private ScoreManager theScoreManager;
 
-    void Start()
-    {
+  void Start()
+  {
     platformStartPoint = platformGenerator.position;
     playerStartPoint = thePlayer.transform.position;
 
     theScoreManager = FindObjectOfType<ScoreManager>();
-    }
+  }
 
-    void Update()
-    {
-        
-    }
+  void Update()
+  {
+
+  }
 
   public void RestartGame()
   {
@@ -35,7 +35,7 @@ public class GameManager : MonoBehaviour
 
   public IEnumerator RestartGameCo()
   {
-        theScoreManager.scoreIncreasing = false;
+    theScoreManager.scoreIncreasing = false;
     thePlayer.gameObject.SetActive(false);
     yield return new WaitForSeconds(0.5f);
     platformList = FindObjectsOfType<PlatformDestroyer>();
@@ -48,7 +48,7 @@ public class GameManager : MonoBehaviour
     platformGenerator.position = platformStartPoint;
     thePlayer.gameObject.SetActive(true);
 
-        theScoreManager.scoreCount = 0;
-        theScoreManager.scoreIncreasing = true;
+    theScoreManager.scoreCount = 0;
+    theScoreManager.scoreIncreasing = true;
   }
 }
