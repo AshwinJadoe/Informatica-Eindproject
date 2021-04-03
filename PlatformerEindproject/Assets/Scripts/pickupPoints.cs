@@ -26,6 +26,7 @@ public class pickupPoints : MonoBehaviour
         if(other.gameObject.name == "Player")
         {
             theScoreManager.AddScore(scoreToGive);
+            gameObject.SetActive(false);
         }
     }
 }
