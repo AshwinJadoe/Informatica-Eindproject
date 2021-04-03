@@ -153,7 +153,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coinPool: {fileID: 1375408161}
-  distanceBetweenCoins: 60
+  distanceBetweenCoins: 35
 --- !u!4 &50083168
 Transform:
   m_ObjectHideFlags: 0
@@ -2993,6 +2993,7 @@ MonoBehaviour:
   maxHeightPoint: {fileID: 1842651262}
   maxHeightChange: 100
   randomCoinThreshold: 100
+  coinHeight: 10
 --- !u!4 &1462567121
 Transform:
   m_ObjectHideFlags: 0
