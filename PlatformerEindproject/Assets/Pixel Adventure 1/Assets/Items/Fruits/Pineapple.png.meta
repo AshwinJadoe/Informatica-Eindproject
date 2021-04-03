@@ -54,7 +54,7 @@ TextureImporter:
       213: 2286579587875889941
     second: Pineapple_16
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 11
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -74,6 +74,7 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -105,9 +106,13 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -140,18 +145,18 @@ TextureImporter:
       name: Pineapple_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 10
+        y: 7
+        width: 12
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9d642b0eb8ae68641a691554507e034c
+      spriteID: 58d81fdf3757f9b00800000000000000
       internalID: 837517196756356485
       vertices: []
       indices: 
@@ -161,18 +166,18 @@ TextureImporter:
       name: Pineapple_1
       rect:
         serializedVersion: 2
-        x: 32
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 42
+        y: 7
+        width: 12
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 79ad15565bb411f428cb8867bcbe9fc0
+      spriteID: 047eff513587c3150800000000000000
       internalID: 5853685913921513280
       vertices: []
       indices: 
@@ -182,18 +187,18 @@ TextureImporter:
       name: Pineapple_2
       rect:
         serializedVersion: 2
-        x: 64
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 74
+        y: 7
+        width: 12
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 49166742d32a284428c37aca9f55a445
+      spriteID: d4a0450d097054080800000000000000
       internalID: -9203941944909886899
       vertices: []
       indices: 
@@ -203,18 +208,18 @@ TextureImporter:
       name: Pineapple_3
       rect:
         serializedVersion: 2
-        x: 96
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 106
+        y: 7
+        width: 12
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1d65045350d4b5d41a21d52325acb46e
+      spriteID: de615a5390ddb9e70800000000000000
       internalID: 9123128501793527533
       vertices: []
       indices: 
@@ -224,18 +229,18 @@ TextureImporter:
       name: Pineapple_4
       rect:
         serializedVersion: 2
-        x: 128
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 138
+        y: 7
+        width: 12
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cca51d3666e18fd4fad560635fab800d
+      spriteID: ca77d68f7fd1543e0800000000000000
       internalID: -2070215502844823636
       vertices: []
       indices: 
@@ -245,18 +250,18 @@ TextureImporter:
       name: Pineapple_5
       rect:
         serializedVersion: 2
-        x: 160
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 170
+        y: 6
+        width: 12
+        height: 19
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b035631efdb302f449988a910b43afea
+      spriteID: f1b969d962ccdee70800000000000000
       internalID: 9146190884484061983
       vertices: []
       indices: 
@@ -266,18 +271,18 @@ TextureImporter:
       name: Pineapple_6
       rect:
         serializedVersion: 2
-        x: 192
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 203
+        y: 5
+        width: 10
+        height: 21
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b1887a5f70b69ac4b8dd51c28c84a1a3
+      spriteID: 7d6898c9d6cff79c0800000000000000
       internalID: -3927142802335889705
       vertices: []
       indices: 
@@ -287,18 +292,18 @@ TextureImporter:
       name: Pineapple_7
       rect:
         serializedVersion: 2
-        x: 224
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 235
+        y: 5
+        width: 10
+        height: 21
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7be312e9dfd483a49aa068463058f31c
+      spriteID: 1c659e32768b4eaa0800000000000000
       internalID: -6132574039448135999
       vertices: []
       indices: 
@@ -308,18 +313,18 @@ TextureImporter:
       name: Pineapple_8
       rect:
         serializedVersion: 2
-        x: 256
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 267
+        y: 5
+        width: 10
+        height: 21
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 261e0d1faa9b0db4d91b6c1a69fda0d1
+      spriteID: fb44f364a976a5b60800000000000000
       internalID: 7735609222263424191
       vertices: []
       indices: 
@@ -329,18 +334,18 @@ TextureImporter:
       name: Pineapple_9
       rect:
         serializedVersion: 2
-        x: 288
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 298
+        y: 6
+        width: 12
+        height: 18
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9f696b9f63accf4478945815c95f2342
+      spriteID: a8e78ec110d6c86b0800000000000000
       internalID: -5292735610519781750
       vertices: []
       indices: 
@@ -350,18 +355,18 @@ TextureImporter:
       name: Pineapple_10
       rect:
         serializedVersion: 2
-        x: 320
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 330
+        y: 6
+        width: 12
+        height: 18
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 020aa40501fbcf8478c0617bf57691e6
+      spriteID: 312d40b31b08f8b20800000000000000
       internalID: 3138868963988263443
       vertices: []
       indices: 
@@ -371,18 +376,18 @@ TextureImporter:
       name: Pineapple_11
       rect:
         serializedVersion: 2
-        x: 352
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 362
+        y: 8
+        width: 12
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 38bd3175aecbb1647b6d1d0b960c75f1
+      spriteID: 2b7fb33f1823a1cd0800000000000000
       internalID: -2586699502257965134
       vertices: []
       indices: 
@@ -392,18 +397,18 @@ TextureImporter:
       name: Pineapple_12
       rect:
         serializedVersion: 2
-        x: 384
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 393
+        y: 9
+        width: 14
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c349b73e2750cf8499dca4540666994f
+      spriteID: 143cdc1f7eee8bbf0800000000000000
       internalID: -308233894513228991
       vertices: []
       indices: 
@@ -413,18 +418,18 @@ TextureImporter:
       name: Pineapple_13
       rect:
         serializedVersion: 2
-        x: 416
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 425
+        y: 9
+        width: 14
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d217660546245f94c9fff64ace0c10df
+      spriteID: 50aa59a1c19eb6ec0800000000000000
       internalID: -3572505572473984507
       vertices: []
       indices: 
@@ -434,18 +439,18 @@ TextureImporter:
       name: Pineapple_14
       rect:
         serializedVersion: 2
-        x: 448
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 457
+        y: 9
+        width: 14
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1a004801ebdca7e42b12ef0ee2c0476c
+      spriteID: b66f8a2fb6dd54520800000000000000
       internalID: 2685796208498767467
       vertices: []
       indices: 
@@ -455,18 +460,18 @@ TextureImporter:
       name: Pineapple_15
       rect:
         serializedVersion: 2
-        x: 480
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 490
+        y: 8
+        width: 12
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 20eb912761e0a03458404a528f97d049
+      spriteID: dab7f4ecf727580b0800000000000000
       internalID: -5727045457883989075
       vertices: []
       indices: 
@@ -476,18 +481,18 @@ TextureImporter:
       name: Pineapple_16
       rect:
         serializedVersion: 2
-        x: 512
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 522
+        y: 8
+        width: 12
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3e482dfda1af3e746a457bb0b274ebb8
+      spriteID: 513600635009bbf10800000000000000
       internalID: 2286579587875889941
       vertices: []
       indices: 
