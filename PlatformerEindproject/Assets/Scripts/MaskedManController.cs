@@ -29,6 +29,8 @@ public class MaskedManController : MonoBehaviour
   public Transform groundCheck;
   public float groundCheckRadius;
 
+  private bool stoppedJumping;
+
   //private Collider2D myCollider;
 
   private Animator myAnimator;
@@ -49,6 +51,7 @@ public class MaskedManController : MonoBehaviour
     movementSpeedStore = movementSpeed;
     speedMilestoneCountStore = speedMilestoneCount;
     speedIncreaseMilestoneStore = speedIncreaseMilestone;
+    stoppedJumping = true;
   }
 
 
@@ -75,6 +78,7 @@ public class MaskedManController : MonoBehaviour
       if (grounded)
       {
         myRigidbody.velocity = new Vector2(myRigidbody.velocity.x, jumpForce);
+        stoppedJumping = false;
       }
     }
 
@@ -87,7 +91,7 @@ public class MaskedManController : MonoBehaviour
       isFalling = false;
     }
 
-    if (Input.GetKey(KeyCode.Space) || Input.GetMouseButton(0))
+    if ((Input.GetKey(KeyCode.Space) || Input.GetMouseButton(0)) && !stoppedJumping)
     {
       if (jumpTimeCounter > 0)
       {
@@ -99,6 +103,7 @@ public class MaskedManController : MonoBehaviour
     if (Input.GetKeyUp(KeyCode.Space) || Input.GetMouseButtonUp(0))
     {
       jumpTimeCounter = 0;
+      stoppedJumping = true;
     }
 
     if (grounded)
@@ -116,7 +121,7 @@ public class MaskedManController : MonoBehaviour
   {
     if (other.gameObject.tag == "killbox")
     {
-      
+
       theGameManager.RestartGame();
       movementSpeed = movementSpeedStore;
       speedMilestoneCount = speedMilestoneCountStore;
