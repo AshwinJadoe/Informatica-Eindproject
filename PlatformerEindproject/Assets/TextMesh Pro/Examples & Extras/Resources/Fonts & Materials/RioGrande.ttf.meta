@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: a26c434442692624a82e585f8473bee8
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Rio Grande
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: de4b38075011a6545af87e83afee3986, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
